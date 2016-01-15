@@ -1,4 +1,4 @@
-My Awesome Book
+MOE Computing Teachers' Content Upgrading Course FAQ
 =======
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+This e-book contains snippets of explanations to frequently asked questions.
