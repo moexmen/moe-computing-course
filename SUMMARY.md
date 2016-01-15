@@ -2,5 +2,5 @@
 
 * [Introduction](README.md)
 * [Python Basics](1-python.md)
-* Functions
+* [Functions](chapters/functions.md)
 
