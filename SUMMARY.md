@@ -1,6 +1,5 @@
 # Summary
 
 * [Introduction](README.md)
-* [Python Basics](1-python.md)
-* [Functions](chapters/functions.md)
-
+* [Basics](chapters/1-basics.md)
+* [Functions](chapters/2-functions.md)
