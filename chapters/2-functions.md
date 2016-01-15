@@ -1,5 +1,9 @@
 # Functions
 
+## What are lambdas?
+
+## Why we need lambdas
+
 ## Huh? Why are there two parentheses in `add_5(x)()`?
 
 ```python
@@ -9,7 +13,7 @@ def zero():
 
 This function takes in no arguments and returns 0.
 
-```
+```python
 >>> x = zero
 ```
 
