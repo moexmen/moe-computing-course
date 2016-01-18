@@ -1,9 +1,5 @@
 # Functions
 
-## What are lambdas?
-
-## Why we need lambdas
-
 ## Huh? Why are there two parentheses in `add_5(x)()`?
 
 ```python
