@@ -4,20 +4,20 @@
 
 A lambda is a special kind of function. You can think of them as a low-powered, no-frills version of "normal" functions.
 
-"Normal" function:
+**"Normal" function:**
 
 ```python
 def square(x):
-    return x*x
+    return x * x
 ```
 
-Lambda equivalent:
+**Lambda equivalent:**
 
 ```python
-square = lambda x: x*x
+square = lambda x: x * x
 ```
 
-Key differences
+**Key differences**
 - Lambdas are one-liners
 - Lambdas are anonymous
 
@@ -38,7 +38,7 @@ To print the square of 11, we can do:
 
 ```python
 def square(x):
-    return x*x
+    return x * x
 
 print(apply_to_11(square))
 ```
@@ -46,7 +46,7 @@ print(apply_to_11(square))
 That's three lines of code. With lambdas, we can do it with one line:
 
 ```python
-print(apply_to_11(lambda x: x*x))
+print(apply_to_11(lambda x: x * x))
 ```
 
 Here is a more compelling example. You may skip this if you don't know about lists, objects and map. Given a list of objects, we extract their names:
