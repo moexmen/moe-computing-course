@@ -1,5 +1,5 @@
 {
-    "plugins": ["autocover", "katex"],
+    "plugins": ["autocover", "mathjax"],
     "pluginsConfig": {
         "autocover": {
             "title": "MOE Computing FAQ",
