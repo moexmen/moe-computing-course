@@ -31,6 +31,6 @@ final answer.
 ### Cool Stuff
 
 Now that you've learnt about recursion, you should be able to understand
-Google's little easter egg when you do a search for 'recursion'.
+Google's little [easter egg](https://en.wikipedia.org/wiki/Easter_egg_%28media%29) when you do a search for 'recursion'.
 
 ![Google search for recursion](images/recursion-search.png)
