@@ -89,5 +89,7 @@ def beside(rune1, rune2):
 
 Observe that `beside` is defined in terms of `stack` using a rotate-transform-unrotate pattern. Imitate this.
 
+## Your turn
 
+Using the basic functions listed here, try to compose the Egyptian rune by building it up from smaller parts.
 
