@@ -5,6 +5,6 @@
 * [Functions](chapters/2-functions.md)
    * [Lambdas](chapters/2-lambdas.md)
 * [Recursion](chapters/3-recursion.md)
+* [Orders of Growth](chapters/4-complexity.md)
 * Mission Briefs
    * [M2: Egyptian](briefs/m2-egyptian.md)
-
