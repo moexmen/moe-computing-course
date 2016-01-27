@@ -2,9 +2,9 @@
 
 Cute introduction by [Algosaur.us](http://algosaur.us/algorithmic-complexity/).
 
-## [Arithmetic Progression](https://en.wikipedia.org/wiki/Arithmetic_progression) (AP)
+## [Arithmetic Progressions](https://en.wikipedia.org/wiki/Arithmetic_progression) (AP)
 
-APs occur frequently when computing orders of growth. The formula to consecutive integers is
+APs occur frequently when computing orders of growth. The formula to sum consecutive integers is
 
 $$
 1 + 2 + 3 + \cdots + (n-1) + n = \frac{n(n+1)}{2} \in O(n^2)
@@ -32,7 +32,10 @@ def sum_factorials(n):
 
 What is the time complexity of `sum_factorials`?
 
-First, we need to calculate the time complexity of `factorial`. `k` number of multiplications are done when `factorial(k)` is called. Thus, the order of growth for space is linear, i.e. O(k). To be precise, exactly `k` steps of computation (multiplication) are done, e.g. `factorial(5)` does 5 multiplications.
+First, we need to calculate the time complexity of `factorial`.
+When `factorial(k)` is called, exactly `k` number of steps of computation are done.
+To be specific, `k` multiplications are executed.
+Thus, the order of growth for the number of steps of execution of `factorial` is $$O(k)$$, i.e. linear.
 
 Now, let's count the number of operations (`+` or `*`) done when `sum_factorials(4)` is called:
 
@@ -85,4 +88,4 @@ Thus, the time complexity of `sum_factorials` is $$O(n^2)$$.
 
 A good way to visualize orders of growth for an algorithm is to use Python Tutor.
 
-Step through your code. At which step of your code is the right side most "full"?
+Step through your code. At which step of your code is the right side "fullest"?
