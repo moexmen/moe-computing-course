@@ -67,9 +67,9 @@ What is the difference? First, notice that the LHS of the `=` is what we want to
 
 For the uninitiated, `n!  = n * (n-1)!` is baffling. The conversation in his/her head might go:
 
-- *"So ``n!  = n * (n-1)!``. Hmm... okay. But what is `(n-1)!`? How would I know how to compute that if I don't know what `!` does?!"*
-- *"Right, so if we substitute `n` with `n-1` in the formula, we get `(n-1)! = (n-1) * ((n-1) - 1)!` or more simply `(n-1)! = (n-1) * (n-2)!`. Okay, cool. We are getting somewhere, aren't we? So if we put it together, we get  `n! = n * (n-1) * (n-2)!`."*
-- *"No, wait. Don't we have the same problem again? This will go on and on, right?"*
+- "So `n!  = n * (n-1)!`. Hmm... okay. But what is `(n-1)!`? How would I know how to compute that if I don't know what `!` does?!"
+- "Right, so if we substitute `n` with `n-1` in the formula, we get `(n-1)! = (n-1) * ((n-1) - 1)!` or more simply `(n-1)! = (n-1) * (n-2)!`. Okay, cool. We are getting somewhere, aren't we? So if we put it together, we get  `n! = n * (n-1) * (n-2)!`."
+- "No, wait. Don't we have the same problem again? This will go on and on, right?"
 
 And the student would be right. The process does not terminate because there is no termination condition. The proper definition should be:
 
@@ -78,8 +78,8 @@ And the student would be right. The process does not terminate because there is 
 n!  =  n * (n-1)!   if n > 0
        1            if n = 0
 ```
-	
-From this, we see the importance of carefully choosing *base cases* so that whenever a valid input is given, 
+
+From this, we see the importance of carefully choosing *base cases* so that whenever a valid input is given,
 a recursive calculation will always terminate. Sometimes, we need more than one base case,. For example, `fibonacci` has two base cases: the case when `n` is `0` and the case when `n` is `1`.
 
 ### Why is recursion so hard??
@@ -90,7 +90,7 @@ While many learning resources tell you what  recursion *is* ("recursion = base c
 
 #### Recursive Call Frames
 
-The Python interpreter runs one line of code at a time. However, for recursive functions, it can seem that more than one line of code are running simultaneously. 
+The Python interpreter runs one line of code at a time. However, for recursive functions, it can seem that more than one line of code are running simultaneously.
 
 Let's number the definition for `factorial`:
 
@@ -166,7 +166,3 @@ print("\n" + str(fact(6, "")))
 Run it and trace through the print statements to see how the function
 approaches the base case, then propagates the result up to obtain the
 final answer.
-
-
-
-
