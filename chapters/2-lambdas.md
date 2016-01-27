@@ -69,7 +69,7 @@ Neater right? Assigning the name `get_name` does not add value to the code. When
 
 "Aiyo. The `def` version works what... why complicate things?"
 
-Yes, technically a `def` function can do whatever a `lambda` function can do, but not vice-versa. 
+Yes, technically a `def` function can do whatever a `lambda` function can do, but not vice-versa.
 
 "And sure, if we use say `n=20` lambdas, we can save `2*n = 40` lines of code, which is nice, but why else would anyone use them? What were the programmers thinking when they made this feature?"
 
@@ -83,7 +83,7 @@ Notice that by using lambdas, we freed the names `square` and `get_name` to be u
 
 ## When *not* to use lambdas?
 
-Lambdas have some limitations. 
+Lambdas have some limitations.
 
 ### When we want to reuse a function
 
@@ -93,14 +93,14 @@ Lambdas are one-use disposables.
 
 ### When the function is too complex
 
-First, notice that the `return` statement is implicit in lambdas, e.g. in `lambda x: x*x`, `x*x` is returned even though the `return` keyword is not used. 
+First, notice that the `return` statement is implicit in lambdas, e.g. in `lambda x: x*x`, `x*x` is returned even though the `return` keyword is not used.
 
 Lambdas can only be used for functions that take in one or more arguments and "immediately" return a value. If the there is some processing to do and you need a few lines, for example,
 
 ```python
-def get_third_ranked(list_of_runners, n):
-    list_of_runners.sort()
-    return list_of_runners[n]
+def get_third_ranked(list_of_runners):
+    list_of_runners.sort()  # Mutates the list. Does not return any values.
+    return list_of_runners[3]
 ```
 
 then use `def` to define the function.
