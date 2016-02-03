@@ -3,46 +3,59 @@
 ## Huh? Why are there two parentheses in `add_5(x)()`?
 
 ```python
-def zero():
-    return 0
+def shell_with_pearl():
+    return 'pearl'
 ```
 
-This function takes in no arguments and returns `0`.
+This function `shell_with_pearl` takes in no arguments and returns the string `'pearl'`.
 
 ```python
->>> x = zero
+>>> a = shell_with_pearl
+>>> a
+<function shell_with_pearl at 0x1078ff268>
 ```
 
-Here, the function zero is assigned to `x`. Note that we have not yet called the function, so there is no returning of values.
+Here, the function `shell_with_pearl` is assigned to `a`.
+Note that we have not yet called the function, so there is no returning of values.
 
 ```python
->>> x = zero()
+>>> b = shell_with_pearl()
+>>> b
+'pearl'
 ```
 
-Here, zero is being called and it returns `0`. So `x` takes the value `0`.
+Here, `shell_with_pearl` is being called and it returns the string `'pearl'`.
+So `b` takes the value `'pearl'`.
 
 ```python
 def wrapper():
-    return zero
+    return shell_with_pearl
 ```
 
-This function takes in no arguments and returns the function zero
-.
+This function takes in no arguments and returns the function `shell_with_pearl`.
 
 ```python
->>> y = wrapper
+>>> c = wrapper
+>>> c
+<function wrapper at 0x109543ea0>
 ```
 
-Here, `y` is assigned the function wrapper.
+Here, `c` is assigned the function `wrapper`.
 
 ```python
->>> y = wrapper()
+>>> d = wrapper()
+>>> d
+<function shell_with_pearl at 0x1078ff268>
 ```
 
-Here, wrapper is being called with no arguments. It returns the function zero; the value of `y` is not a number, but a function that returns a number when called. Now, let's call that inner function to obtain the number `0`:
+Here, `wrapper` is being called with no arguments. It returns the function `shell_with_pearl`;
+the value of `d` is not a string, but a function that returns a string when called.
+Now, let's call that inner function to obtain the string `'pearl'`:
 
 ```python
->>> y = wrapper()()
+>>> e = wrapper()()
+>>> e
+'pearl'
 ```
 
-In this line, we can think of the first function call (denoted by the first parentheses pair) as serving to 'unwrap' and reveal the function `zero`. The second function call is made to the 'unwrapped' function `zero` and the number `0` is returned. Thus, the value of `y` in this line is `0`.
+In this line, we can think of the first function call (denoted by the first parentheses pair) as serving to 'unwrap' and reveal the function `shell_with_pearl`. The second function call is made to the 'unwrapped' function `shell_with_pearl` and `'pearl'` is returned. Thus, the value of `e` is `'pearl'`.
