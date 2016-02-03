@@ -1,11 +1,12 @@
 # Abstraction
 
-Functional abstraction allows us to treat functions as black boxes.
-We just care about what a function does and how to use it.
+Functional abstraction allows us to treat functions as black boxes,
+meaning that we just care about what a function does and how to use it.
+We don't care how it does its task.
 
 This is helpful when implementing more complex programs.
 We use **Wishful Thinking** to imagine that we have functions
-which do what we want. 
+which do what we want.
 We start by thinking of what they should do and how to use them.
 This helps you to think about what functions and data you need
 before you implement the function.
@@ -32,16 +33,20 @@ and unfamiliarity with Python's syntax for defining functions.
 
 ### Similar Examples
 
-A closer examination of the code given in the question reveals
-two stubs: `spawn_balrog` and `balrog_attack`.
+We have already written three stubs.
+`spawn_balrog`, `balrog_attack` and `take_defensive_action`.
 
 We'll cover their main parts below.
 
 #### Function Definition
 
-Both functions start with the Python keyword `def`, for "define",
-followed by the function's name. Finally, variable names
+Let's look at `def balrog_attack(balrog, person)`
+
+The function starts with the Python keyword `def`, for "define",
+followed by the function's name (`balrog_attack`). Finally, variable names
+(`balrog`, `person`)
 for the function's parameters are surrounded by parentheses.
+
 
 #### Docstrings
 
@@ -59,15 +64,16 @@ Docstrings are useful for documentation generators such as
 go through your code, find the docstrings and generate various output
 formats of your documentation.
 
+You can also view your helpful description with `help(your_function_name)`.
+
+
 By following the conventions, you can get readable documentation for
 little effort!
 
 #### Function Body
 
-In both these examples, the only code in the function is `pass`.
-The `pass` statement is needed to avoid syntax errors, but
-nothing happens when it executes. This is useful for writing stubs,
-exactly what you're seeing here.
+If you leave the function body empty, you will get a syntax error. Python requires you to put something.
+You can put `pass`. `pass` is just a placeholder that does nothing.
 
 ### Completing the Question
 
