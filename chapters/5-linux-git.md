@@ -27,12 +27,12 @@ Useful options will be listed as sublists.
 
 ## Linux
 
-* `ls <directory name>`: List directory contents.
+* `ls <directory_name>`: **L**i**S**t directory contents.
 If no directory is specified, list the contents of the current directory.
   * `-l`: displays listings in a long format.
   * `-a`: also displays hidden files.
 * `pwd`: Get the name of the current working directory.
-* `cd <directory name>`: Change working directory to `directory name`.
+* `cd <directory_name>`: Change working directory to `directory_name`.
 If no directory is specified, goes back to the home folder.
 * `cat <filename ...>`: Con**CAT**enate and print files.
 * `nano <filename ...>`: Open specified files with the nano text editor.
@@ -48,14 +48,14 @@ If no directory is specified, goes back to the home folder.
 
 ## Git
 
-Each command here is prefixed with `git`. They are subcommands which belong
+Prefix each command here with `git` to use it. They are subcommands which belong
 to the main `git` command.
 
 * `checkout <branch name>`: Switch to the specified branch.
   * `-b`: Create a new branch with that name.
   If the branch exists on the server, Git will automatically track the branch.
-* `clone <URL> <directory name>`: Clone the repository into the specified directory.
-  If `directory name` is not specified, a directory is automatically created.
+* `clone <URL> <directory_name>`: Clone the repository into the specified directory.
+  If `directory_name` is not specified, a directory is automatically created.
 * `add <filename ...>`: Tells Git you want to add these files to the next commit.
 * `commit`: Creates a new commit which records your changes.
   * `-m "<commit message>"`: Specify a commit message. Quote marks are necessary.
