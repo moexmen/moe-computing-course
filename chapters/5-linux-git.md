@@ -3,8 +3,6 @@
 The following sections list of the more commonly used Linux and Git
 commands.
 
-You will find them useful for the lesson on Version Control Systems.
-
 Most of these commands have tons of options you will seldom use.
 We'll cover some of the more frequently used ones here, but you can always
 find out more by checking the command's documentation.
