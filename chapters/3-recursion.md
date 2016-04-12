@@ -7,7 +7,7 @@
 
 ![](images/recursion-search.png)
 
-*"Did you mean: recusion"* is an [easter egg](https://en.wikipedia.org/wiki/Easter_egg_%28media%29). You should get the inside joke if you have understood recursion.
+*"Did you mean: recursion"* is an [easter egg](https://en.wikipedia.org/wiki/Easter_egg_%28media%29). You should get the inside joke if you have understood recursion.
 
 ## Cheat Sheet
 
