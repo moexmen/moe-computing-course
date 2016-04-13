@@ -47,7 +47,7 @@ bowling_score("20000000000000000000") # => 2
 bowling_score("XXXXXXXXXXXX") # => 300
 ```
 
-There are at least $$10^12$$ of them to test, but if your function passes all the
+There are at least $$10^{12}$$ of them to test, but if your function passes all the
 tests, is it possible for your function to produce the wrong result,
 assuming a input given is valid? No. Your function would have failed the test
 case for that input otherwise.
