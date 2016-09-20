@@ -13,3 +13,4 @@
    * [M2: Egyptian](briefs/m2-egyptian.md)
    * [M5: More than Thrice](briefs/m5-thrice.md)
    * [M7: Curve Introduction](briefs/m7-curves.md)
+   * [M9: Bus Stop Missions](briefs/m9-busstops.md)
