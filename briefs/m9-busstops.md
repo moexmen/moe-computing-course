@@ -189,5 +189,5 @@ Tasks:
 
 ```python
 def number_of_stops_in_second_direction(bus_service):
-  return len(get_route("2"))
+  return len(get_route(bus_service, "2"))
 ```
